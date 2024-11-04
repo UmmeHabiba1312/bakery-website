@@ -73,7 +73,7 @@ const About = () => {
                         className='right'
                         height={500}
                         width={500}
-                        src="/right4.jfif"
+                        src="/right4.jpg"
                         alt='left2'/>
                         </div>
                         <div className='rightp2'>
@@ -90,7 +90,7 @@ const About = () => {
                         className='right'
                         height={500}
                         width={500}
-                        src="/right3.jfif"
+                        src="/right3.jpg"
                         alt='left1'/>
                         </div>
                         <div className='btmp1'>
