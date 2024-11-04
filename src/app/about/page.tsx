@@ -26,7 +26,7 @@ const About = () => {
             {/* rightdiv */}
             <div className='rightdiv'>
                 <h2 className='abouth2'>What Is Your Favourite Bread For Your Sandwich</h2>
-                <p className='aboutp'>What is your favorite bread for a sandwich? At Bread Bakery, we believe that every great sandwich starts with the perfect bread. Whether it's the hearty crunch of a rustic sourdough, the soft, pillowy layers of brioche, or the classic taste of whole-grain, each bread brings its own flavor and texture to enhance your sandwich experience. Explore our wide selection, freshly baked with premium ingredients, and find the ideal base for your next delicious creation!</p>
+                <p className='aboutp'>What is your favorite bread for a sandwich? At Bread Bakery, we believe that every great sandwich starts with the perfect bread. Whether it is the hearty crunch of a rustic sourdough, the soft, pillowy layers of brioche, or the classic taste of whole-grain, each bread brings its own flavor and texture to enhance your sandwich experience. Explore our wide selection, freshly baked with premium ingredients, and find the ideal base for your next delicious creation!</p>
                 <p className='aboutp'>Choosing the right bread can turn a simple sandwich into something truly memorable. At Bread Bakery , we offer a range of freshly baked options designed to elevate every bite. From soft, fluffy focaccia to nutty whole-grain and crisp baguettes, each variety brings unique flavor and texture. Discover your favorite and let our bread be the foundation of your best sandwiches yet!</p>
                 <button className='aboutbtn '>Explore More</button>
             </div>
