@@ -1,0 +1,109 @@
+
+/* header.css */
+
+.header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-color: #1f0303;
+}
+
+
+.logodiv {
+    flex: 1;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.headcomp {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.link {
+    color: #f8ebba;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.link:hover{
+    border-bottom: 3px solid #f8ebba;
+}
+
+.btndiv {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-right: 50px;
+    background-color: #e0b414;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logodiv {
+        margin-bottom: 10px;
+    }
+
+    .headcomp {
+        flex-direction:row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btndiv {
+        margin-top: 10px;
+    }
+
+    .logo {
+        max-width: 80px; /* Adjust for smaller screens */
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        font-size: 14px; /* Smaller font for extra small screens */
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+

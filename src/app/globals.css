@@ -1,27 +1,105 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.heroImg{
+  width:100vw;
+  height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.hero{
+  position: relative; /* Set the container to relative */
+  display: inline-block;
+}
+.product{
+  width: 100vw;
+}
+.heropara{
+  position: absolute; /* Absolute position relative to container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to exact center */
+  color: white; /* Text color */
+  font-size: 90px; /* Text size */
+  font-weight: bold;
+  text-align: center;
+}
+
+.prohead {
+  color: rgb(31, 2, 2);
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* Container for the product cards */
+.herocard {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr; /* Default: single column for mobile */
+  margin-top: 30px;
+}
+
+/* Each individual product card and description */
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(254, 237, 216);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card1:hover {
+  transform: scale(1.05);
+}
+
+
+
+.cardImg {
+  height: 280px;
+  width: 250px;
+}
+
+.cardcont {
+  font-weight: bold;
+  color: rgb(80, 77, 77);
+  font-size: 20px;
+  margin-top: 15px;
+  /* text-align: center; */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.star {
+  color: rgb(232, 185, 30);
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+  .herocard {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Extra-large screens (desktops) */
+@media (min-width: 1200px) {
+  .herocard {
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
   }
 }
