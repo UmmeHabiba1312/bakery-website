@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <main className="contact-container">
         <h1 className="contact-title">Get In <span>Touch</span></h1>
-        <p className="contact-description">We're here to help! Whether you have a question or just want to say hello, feel free to reach out to us.</p>
+        <p className="contact-description">We are here to help! Whether you have a question or just want to say hello, feel free to reach out to us.</p>
 
         <div className="contact-content">
             {/* <!-- Contact Information Section --> */}
@@ -23,7 +23,7 @@ const Contact = () => {
                     <i className="icon"><MdEmail /></i>
                     <div className='infocont'>
                         <p className='maincont'>Email:</p>
-                        <p  className='cont'>Ummehabiba1312@gmail.com</p>
+                        <p  className='cont'>{'Ummehabiba1312@gmail.com'}</p>
                     </div>
                 </div>
                 <div className="info-item">
