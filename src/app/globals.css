@@ -103,3 +103,8 @@
     grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
   }
 }
+
+
+body{
+  overflow-x: hidden;
+}
